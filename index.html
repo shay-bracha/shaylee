@@ -5,43 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>לומדים בכיף | אנגלית וחשבון לכיתה ה׳</title>
   <style>
-    :root{--pink:#ff6fae;--purple:#7657e8;--blue:#4f9cf9;--yellow:#ffd75a;--ink:#24324a;--bg:#fff8fc;--card:#fff;}
+    :root{--pink:#ff6fae;--purple:#7657e8;--blue:#4f9cf9;--yellow:#ffd75a;--ink:#24324a;--card:#fff;}
     *{box-sizing:border-box} body{margin:0;font-family:Arial,"Rubik",sans-serif;background:linear-gradient(180deg,#fff8fc,#f4f8ff);color:var(--ink)}
-    header{padding:18px 7%;display:flex;justify-content:space-between;align-items:center;background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 14px #0000000d}
-    .logo{font-size:1.35rem;font-weight:800;color:var(--purple)} nav a{margin:0 10px;text-decoration:none;color:var(--ink);font-weight:700}
-    .hero{padding:70px 7% 55px;display:grid;grid-template-columns:1.15fr .85fr;gap:35px;align-items:center}
-    .badge{display:inline-block;background:#ffe4f1;color:#c52d72;padding:8px 14px;border-radius:999px;font-weight:800}
-    h1{font-size:clamp(2.2rem,5vw,4.3rem);line-height:1.05;margin:16px 0}.hero p{font-size:1.2rem;line-height:1.7;color:#52617a}
-    .cta{display:inline-block;background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff;padding:14px 23px;border-radius:14px;text-decoration:none;font-weight:800;box-shadow:0 10px 24px #7657e833}
-    .hero-card{background:#fff;border-radius:30px;padding:35px;box-shadow:0 20px 50px #4050801a;text-align:center}.emoji{font-size:5rem}
-    section{padding:55px 7%}.section-title{text-align:center;font-size:2.2rem;margin:0 0 12px}.section-sub{text-align:center;color:#65738b;margin:0 auto 35px;max-width:650px}
-    .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:1050px;margin:auto}.card{background:var(--card);padding:28px;border-radius:24px;box-shadow:0 12px 35px #40508012}.card h3{font-size:1.5rem;margin-top:0}.english{border-top:7px solid var(--blue)}.math{border-top:7px solid var(--yellow)}
-    .exercise{background:#f8faff;padding:18px;border-radius:16px;margin:15px 0}.exercise p{font-size:1.1rem;font-weight:700}.exercise input{width:100%;padding:12px;border:2px solid #dbe2ef;border-radius:10px;font-size:1rem;margin-top:7px}.check{margin-top:10px;border:0;border-radius:10px;padding:10px 16px;background:var(--purple);color:#fff;font-weight:700;cursor:pointer}.result{font-weight:800;margin:8px 0 0;min-height:22px}.good{color:#159957}.bad{color:#d13b59}
-    footer{text-align:center;padding:35px;background:#24324a;color:#fff} .small{font-size:.9rem;opacity:.8}
-    @media(max-width:800px){.hero{grid-template-columns:1fr}.cards{grid-template-columns:1fr}header nav{display:none}}
+    header{padding:18px 7%;display:flex;justify-content:space-between;align-items:center;background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 14px #0000000d}.logo{font-size:1.35rem;font-weight:800;color:var(--purple)} nav a{margin:0 10px;text-decoration:none;color:var(--ink);font-weight:700}
+    .hero{padding:70px 7% 55px;display:grid;grid-template-columns:1.15fr .85fr;gap:35px;align-items:center}.welcome{display:inline-block;background:linear-gradient(135deg,#ff6fae,#7657e8);color:#fff;padding:12px 18px;border-radius:16px;font-size:1.05rem;font-weight:800;box-shadow:0 10px 24px #7657e833;margin-bottom:10px}.badge{display:inline-block;background:#ffe4f1;color:#c52d72;padding:8px 14px;border-radius:999px;font-weight:800}h1{font-size:clamp(2.2rem,5vw,4.3rem);line-height:1.05;margin:16px 0}.hero p{font-size:1.2rem;line-height:1.7;color:#52617a}.cta{display:inline-block;background:linear-gradient(135deg,var(--pink),var(--purple));color:#fff;padding:14px 23px;border-radius:14px;text-decoration:none;font-weight:800;box-shadow:0 10px 24px #7657e833}.hero-card{background:#fff;border-radius:30px;padding:35px;box-shadow:0 20px 50px #4050801a;text-align:center}.emoji{font-size:5rem}
+    section{padding:55px 7%}.section-title{text-align:center;font-size:2.2rem;margin:0 0 12px}.section-sub{text-align:center;color:#65738b;margin:0 auto 35px;max-width:650px}.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;max-width:1050px;margin:auto}.card{background:var(--card);padding:28px;border-radius:24px;box-shadow:0 12px 35px #40508012}.card h3{font-size:1.5rem;margin-top:0}.english{border-top:7px solid var(--blue)}.math{border-top:7px solid var(--yellow)}.exercise{background:#f8faff;padding:18px;border-radius:16px;margin:15px 0}.exercise p{font-size:1.1rem;font-weight:700}.exercise input{width:100%;padding:12px;border:2px solid #dbe2ef;border-radius:10px;font-size:1rem;margin-top:7px}.check{margin-top:10px;border:0;border-radius:10px;padding:10px 16px;background:var(--purple);color:#fff;font-weight:700;cursor:pointer}.result{font-weight:800;margin:8px 0 0;min-height:22px}.good{color:#159957}.bad{color:#d13b59}footer{text-align:center;padding:35px;background:#24324a;color:#fff}.small{font-size:.9rem;opacity:.8}@media(max-width:800px){.hero{grid-template-columns:1fr}.cards{grid-template-columns:1fr}header nav{display:none}}
   </style>
 </head>
 <body>
   <header><div class="logo">📚 לומדים בכיף</div><nav><a href="#תרגילים">תרגילים</a><a href="#למה">למה אנחנו?</a></nav></header>
   <main>
     <section class="hero">
-      <div><span class="badge">מיועד לכיתה ה׳</span><h1>אנגלית וחשבון,<br>אבל בכיף! ✨</h1><p>דף תרגול קצר, צבעוני ופשוט שעוזר לתרגל אנגלית וחשבון בקצב שלך.</p><a class="cta" href="#תרגילים">מתחילים לתרגל 🚀</a></div>
+      <div><div class="welcome">🌟 ברוכים הבאים לאתר התרגילים הגדול בארץ של שי לי ברכה! 🌟</div><span class="badge">מיועד לכיתה ה׳</span><h1>אנגלית וחשבון,<br>אבל בכיף! ✨</h1><p>דף תרגול קצר, צבעוני ופשוט שעוזר לתרגל אנגלית וחשבון בקצב שלך.</p><a class="cta" href="#תרגילים">מתחילים לתרגל 🚀</a></div>
       <div class="hero-card"><div class="emoji">🧠✏️📖</div><h2>אתגר היום</h2><p>פתרו כמה שאלות, בדקו את התשובות ונסו לשפר את התוצאה!</p></div>
     </section>
-
-    <section id="תרגילים"><h2 class="section-title">תרגילי היום</h2><p class="section-sub">שתי משימות באנגלית ושתי משימות בחשבון. אפשר לנסות שוב כמה פעמים שרוצים.</p>
-      <div class="cards">
-        <div class="card english"><h3>🇬🇧 אנגלית</h3>
-          <div class="exercise"><p>1. השלימו: I ___ a student.</p><input id="e1" placeholder="type / am / are" /><button class="check" onclick="check('e1','am','r1')">בדיקה</button><div id="r1" class="result"></div></div>
-          <div class="exercise"><p>2. What is the opposite of “big”?</p><input id="e2" placeholder="write one word" /><button class="check" onclick="check('e2','small','r2')">בדיקה</button><div id="r2" class="result"></div></div>
-        </div>
-        <div class="card math"><h3>➗ חשבון</h3>
-          <div class="exercise"><p>1. 48 ÷ 6 = ?</p><input id="m1" placeholder="answer" /><button class="check" onclick="check('m1','8','r3')">בדיקה</button><div id="r3" class="result"></div></div>
-          <div class="exercise"><p>2. 125 + 37 = ?</p><input id="m2" placeholder="answer" /><button class="check" onclick="check('m2','162','r4')">בדיקה</button><div id="r4" class="result"></div></div>
-        </div>
-      </div>
-    </section>
-
+    <section id="תרגילים"><h2 class="section-title">תרגילי היום</h2><p class="section-sub">שתי משימות באנגלית ושתי משימות בחשבון. אפשר לנסות שוב כמה פעמים שרוצים.</p><div class="cards">
+      <div class="card english"><h3>🇬🇧 אנגלית</h3><div class="exercise"><p>1. השלימו: I ___ a student.</p><input id="e1" placeholder="type / am / are" /><button class="check" onclick="check('e1','am','r1')">בדיקה</button><div id="r1" class="result"></div></div><div class="exercise"><p>2. What is the opposite of “big”?</p><input id="e2" placeholder="write one word" /><button class="check" onclick="check('e2','small','r2')">בדיקה</button><div id="r2" class="result"></div></div></div>
+      <div class="card math"><h3>➗ חשבון</h3><div class="exercise"><p>1. 48 ÷ 6 = ?</p><input id="m1" placeholder="answer" /><button class="check" onclick="check('m1','8','r3')">בדיקה</button><div id="r3" class="result"></div></div><div class="exercise"><p>2. 125 + 37 = ?</p><input id="m2" placeholder="answer" /><button class="check" onclick="check('m2','162','r4')">בדיקה</button><div id="r4" class="result"></div></div></div>
+    </div></section>
     <section id="למה"><h2 class="section-title">למה לתרגל כאן?</h2><p class="section-sub">🎯 שאלות קצרות · 🌈 עיצוב נעים · ⭐ משוב מיידי · 💪 תרגול בקצב אישי</p></section>
   </main>
   <footer><strong>לומדים בכיף 📚</strong><div class="small">דף תרגול לדוגמה לכיתה ה׳</div></footer>
